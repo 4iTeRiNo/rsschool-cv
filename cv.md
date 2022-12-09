@@ -22,7 +22,7 @@ Let me introduce myself. I'm Igor Zubkov - a 1C and online cash register technic
 - A team player;
 - Communication skills;
 
-## Hard skills : 
+## Hard skills :
 - VS Code;
 - GitHub;
 - Figma;
