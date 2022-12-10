@@ -1,4 +1,4 @@
-.sass/*
-.package-lock.json
-.package.json
-.style.css.map
+**sass/
+package-lock.json
+package.json
+style.css.map
