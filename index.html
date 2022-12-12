@@ -9,5 +9,56 @@
 	<title>CV</title>
 </head>
 <body>
+	<div class="wrapper">
+		<header class="navigation-page">
+			<div class="navigation-page__inner">
+				<button
+          class="theme-toggle"
+          id="toggle"
+          aria-label="Activate light mode"
+          title="Activate light mode"
+          type="button"
+        >
+					<svg id="svg1"
+						xmlns="http://www.w3.org/2001/svg"
+						width="25px"
+						heigth="25px"
+						vieeBox="0 0 25 25"
+					>
+						<mask id="moonClip">
+							<rect x="0" y="0" width="25" height="25" fill="white" />
+							<circle cx="23" cy="12.5" r="13.5" fill="black" />
+						</mask>
+						<circle
+							id="moon"
+							cx="12.5"
+							cy="12.5"
+							r="12.5"
+							fill="#F8F0E4"
+							mask="url(#moonClip)"
+						/>
+						<g fill-rule="evenodd">
+							<circle id="sun" cx="12.5" cy="12.5" r="7" fill="E12179" />
+							<circle id="beam1" cx="12.5" cy="23" r="2" fill="#E12179" />
+							<circle id="beam2" cx="3.5" cy="18" r="2" fill="#E12179" />
+							<circle id="beam3" cx="3.5" cy="7" r="2" fill="#E12179" />
+							<circle id="beam4" cx="12.5" cy="2" r="2" fill="#E12179" />
+							<circle id="beam5" cx="22.5" cy="7" r="2" fill="#E12179" />
+							<circle id="beam6" cx="21.5" cy="18" r="2" fill="#E12179" />
+						</g>
+					</svg>
+				</button>
+				<nan class="navigation-page-bar">
+					<ul class="site-bar">
+						<li class="site-bar__item"><a href="" class="site-bar__link">Skills</a></li>
+						<li class="site-bar__item"><a href="" class="site-bar__link">Experience</a></li>
+						<li class="site-bar__item"><a href="" class="site-bar__link">Project</a></li>
+						<li class="site-bar__item"><a href="" class="site-bar__link">Education</a></li>
+						<li class="site-bar__item"><a href="" class="site-bar__link">Contact</a></li>
+					</ul>
+				</nan>
+			</div>
+		</header>
+	</div>
 </body>
 </html>
