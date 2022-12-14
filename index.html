@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
-	<title>CV</title>
-</head>
-<body>
-	<div class="wrapper">
-		<header class="navigation-page">
-			<div class="navigation-page__inner">
-				<button
-          class="theme-toggle"
-          id="toggle"
-          aria-label="Activate light mode"
-          title="Activate light mode"
-          type="button"
-        >
-					<svg id="svg1"
-						xmlns="http://www.w3.org/2001/svg"
-						width="25px"
-						heigth="25px"
-						vieeBox="0 0 25 25"
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+		<title>Zubkov Igor Resume</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="navigation-page">
+				<div class="navigation-page__inner">
+					<button
+						class="theme-toggle"
+						id="toggle"
+						aria-label="Activate light mode"
+						title="Activate light mode"
+						type="button"
 					>
-						<mask id="moonClip">
-							<rect x="0" y="0" width="25" height="25" fill="white" />
-							<circle cx="23" cy="12.5" r="13.5" fill="black" />
-						</mask>
-						<circle
-							id="moon"
-							cx="12.5"
-							cy="12.5"
-							r="12.5"
-							fill="#F8F0E4"
-							mask="url(#moonClip)"
-						/>
-						<g fill-rule="evenodd">
-							<circle id="sun" cx="12.5" cy="12.5" r="7" fill="E12179" />
-							<circle id="beam1" cx="12.5" cy="23" r="2" fill="#E12179" />
-							<circle id="beam2" cx="3.5" cy="18" r="2" fill="#E12179" />
-							<circle id="beam3" cx="3.5" cy="7" r="2" fill="#E12179" />
-							<circle id="beam4" cx="12.5" cy="2" r="2" fill="#E12179" />
-							<circle id="beam5" cx="22.5" cy="7" r="2" fill="#E12179" />
-							<circle id="beam6" cx="21.5" cy="18" r="2" fill="#E12179" />
-						</g>
-					</svg>
-				</button>
-				<nan class="navigation-page-bar">
-					<ul class="site-bar">
-						<li class="site-bar__item"><a href="" class="site-bar__link">Skills</a></li>
-						<li class="site-bar__item"><a href="" class="site-bar__link">Experience</a></li>
-						<li class="site-bar__item"><a href="" class="site-bar__link">Project</a></li>
-						<li class="site-bar__item"><a href="" class="site-bar__link">Education</a></li>
-						<li class="site-bar__item"><a href="" class="site-bar__link">Contact</a></li>
-					</ul>
-				</nan>
-			</div>
-		</header>
-	</div>
-</body>
+						<svg id="svg1"
+							xmlns="http://www.w3.org/2001/svg"
+							width="25px"
+							heigth="25px"
+							vieeBox="0 0 25 25"
+						>
+							<mask id="moonClip">
+								<rect x="0" y="0" width="25" height="25" fill="white" />
+								<circle cx="23" cy="12.5" r="13.5" fill="black" />
+							</mask>
+							<circle
+								id="moon"
+								cx="12.5"
+								cy="12.5"
+								r="12.5"
+								fill="#F8F0E4"
+								mask="url(#moonClip)"
+							/>
+							<g fill-rule="evenodd">
+								<circle id="sun" cx="12.5" cy="12.5" r="7" fill="E12179" />
+								<circle id="beam1" cx="12.5" cy="23" r="2" fill="#E12179" />
+								<circle id="beam2" cx="3.5" cy="18" r="2" fill="#E12179" />
+								<circle id="beam3" cx="3.5" cy="7" r="2" fill="#E12179" />
+								<circle id="beam4" cx="12.5" cy="2" r="2" fill="#E12179" />
+								<circle id="beam5" cx="22.5" cy="7" r="2" fill="#E12179" />
+								<circle id="beam6" cx="21.5" cy="18" r="2" fill="#E12179" />
+							</g>
+						</svg>
+					</button>
+					<nan class="navigation-page-bar">
+						<ul class="site-bar">
+							<li class="site-bar__item"><a href="" class="site-bar__link">Skills</a></li>
+							<li class="site-bar__item"><a href="" class="site-bar__link">Experience</a></li>
+							<li class="site-bar__item"><a href="" class="site-bar__link">Project</a></li>
+							<li class="site-bar__item"><a href="" class="site-bar__link">Education</a></li>
+							<li class="site-bar__item"><a href="" class="site-bar__link">Contact</a></li>
+						</ul>
+					</nan>
+				</div>
+			</header>
+			<main>
+				<div class="main-wrapper">
+					<div class="about-me container">
+						<div class="about-me__img-block">
+							<img src="" alt="Profile photo" class="about-me__img-block">
+						</div>
+						<h2 class="about-me__name">Hi, I'm <span>Igor</span></h2>
+						<h2 class="about-me__education">Junior Frontend develop(4iTeRiNo)</h2>
+					</div>
+					<div class="about-me__buttons-wrapper">
+						<button class="btn btn-emaile" href=""></button>
+						<button class="btn btn-dowload" href="#"></button>
+				</div>
+				<div class="about-me__description">
+					<p class="description__item">Let me introduce myself. I'm Igor Zubkov - a 1C and online cash register technical specialist (>1 year) seeking to learn the specialty of a junior JavaScript developer, run great projects and join the developers community. I'm responsible for my job and I strictly follow the given directions.</p>
+				</div>
+				</div>
+			</main>
+		</div>
+	</body>
 </html>
