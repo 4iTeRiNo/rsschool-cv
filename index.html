@@ -111,6 +111,49 @@
 							</article>
 						</div>
 					</div>
+					<div class="code-example container">
+						<h2 class="title">Code example:</h2>
+						<h3 class="code-example__name"><span>Reverse words</span>
+							Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+						</h3>
+						<pre class="code-example__item">
+							<code class="code-example__desc">
+								Examples
+				
+								"This is an example!" ==> "sihT si na !elpmaxe"
+								"double  spaces"      ==> "elbuod  secaps"
+								
+								Solution task
+								
+								function reverseWords(str) {
+									let tmp = str.split(' ').map(word => word.split('').reverse().join(''))
+									return tmp.join(' ')
+								}
+							</code>
+						</pre>
+						<h2 class="title">Code example:</h2>
+						<h3 class="code-example__name"><span>Reverse words</span>
+							Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+						</h3>
+						<pre class="code-example__item">
+							<code class="code-example__desc">
+								4 --> 3 (1, 2, 4)
+								5 --> 2 (1, 5)
+								12 --> 6 (1, 2, 3, 4, 6, 12)
+								30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+					
+								Solution task
+					
+								function getDivisorsCnt(n){
+									let result = [];
+									for (let i = 0; i &lt;&amp; n; i++){
+										if (n % i == 0) result.push(i);
+									}
+									return result.length;
+								}
+							</code>
+						</pre>
+					</div>
 				</div>
 			</main>
 		</div>
