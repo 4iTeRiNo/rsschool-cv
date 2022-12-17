@@ -772,4 +772,40 @@ textarea {
   z-index: 1;
 }
 
+.education a {
+  display: inline;
+  color: #e0e0e0;
+  text-decoration: none;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  line-height: 1.2;
+}
+.education .education__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 68px;
+}
+.education .education__list a {
+  transition: color 0.3s ease-in-out;
+}
+.education .education__list .education__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 2fr;
+  column-gap: 28px;
+  position: relative;
+}
+.education .education__list .education__year {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.education__item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  bottom: -34px;
+}
+
 /*# sourceMappingURL=style.css.map */
