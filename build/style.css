@@ -526,7 +526,7 @@ textarea {
   border-color: #fff;
 }
 
-.btn-email::after,
+.btn-basice::after,
 .btn-dowload::after {
   content: "";
   position: absolute;
@@ -541,7 +541,7 @@ textarea {
   z-index: 1;
 }
 
-.btn-email:hover::after,
+.btn-basice:hover::after,
 .btn-dowload:hover::after {
   width: 100%;
   left: 0;
@@ -668,8 +668,8 @@ textarea {
 .background-block {
   padding: 65px 32px;
   max-width: 1440px;
-  background-color: linear-gradient(0deg, #BC1964, #493062 100%);
-  background-image: linear-gradient(0deg, #BC1964, #493062 100%);
+  background-color: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
+  background-image: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
   border-radius: 15px;
   margin-bottom: 65px;
   color: #fff;
@@ -690,6 +690,86 @@ textarea {
   gap: 28px;
   align-items: center;
   width: 100%;
+}
+.skills .skills__item {
+  position: relative;
+  width: fit-content;
+}
+
+.skills__item::before,
+.skills__item::after {
+  position: absolute;
+}
+
+.skills__item::before {
+  content: "<";
+  margin-left: -12px;
+  color: #a42445;
+}
+
+.skills__item::after {
+  content: ">";
+  color: #a42445;
+}
+
+.project {
+  margin-bottom: 68px;
+}
+.project .subtitle {
+  font-weight: normal;
+  color: #a42445;
+  margin-bottom: 10px;
+}
+.project .project__item {
+  margin: 0 auto;
+  margin-bottom: 68px;
+  max-width: 100%;
+  border-radius: 15px;
+  width: 936px;
+}
+.project .project__item .project__item:nth-child(odd) {
+  transform: translateX(25px);
+}
+.project .project__link {
+  display: flex;
+  position: relative;
+  height: 423px;
+  width: 100%;
+  flex-direction: column;
+  text-decoration: none;
+}
+.project .project__link .project__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+.project .project__link .projects__content {
+  position: absolute;
+  max-width: 65%;
+  top: 150px;
+  left: 68px;
+  z-index: 2;
+}
+.project .project__link .projects__content .project__title {
+  margin-bottom: 1rem;
+  color: #e0e0e0;
+}
+
+.project__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  background-color: #321a97;
+  opacity: 0.58;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
