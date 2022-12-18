@@ -1,21 +1,19 @@
 @charset "UTF-8";
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
   color: #e0e0e0;
   background-color: #1C121F;
   font-family: "Ubuntu" sans-serif;
   padding: 20px;
   font-weight: 400;
-  transition: backround 0.6s ease-in-out;
+  transition: background 0.6s ease-in-out;
   min-width: 320px;
-}
-body .light {
-  background-color: #1C121F;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .hidden {
@@ -23,7 +21,6 @@ body .light {
 }
 
 .wrapper {
-  max-width: 1440px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -31,6 +28,7 @@ body .light {
   margin: 0 auto;
   width: 100%;
   padding: 0 20px;
+  max-width: 1440px;
 }
 
 .main-wrapper {
@@ -403,17 +401,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-.theme-toggle {
-  padding: 1rem 0;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.2s ease;
-  opacity: 0.7;
-}
-.theme-toggle :hover {
-  opacity: 1;
-}
-
 #moon {
   transform: rotate(-45deg);
   transform-origin: center center;
@@ -536,7 +523,7 @@ textarea {
   height: 100%;
   bottom: 0px;
   border-radius: 5px;
-  background: linear-gradient(0deg, #BC1964, #493062 100%);
+  background: linear-gradient(0deg, #bc1965, #493062 100%);
   transition: width ease-in-out 0.5s;
   z-index: 1;
 }
@@ -545,7 +532,7 @@ textarea {
 .btn-dowload:hover::after {
   width: 100%;
   left: 0;
-  background: linear-gradient(0deg, #BC1964, #493062 100%);
+  background: linear-gradient(0deg, #bc1965, #493062 100%);
   transition: width ease-in-out 0.5s;
 }
 
@@ -578,6 +565,7 @@ textarea {
   background-color: #1C121F;
   z-index: 5;
   transition: background 0.6s ease-in-out;
+  min-width: 1440px;
 }
 .navigation-page .navigation-page__inner {
   display: flex;
@@ -682,8 +670,8 @@ textarea {
 .background-block {
   padding: 65px 32px;
   max-width: 1440px;
-  background-color: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
-  background-image: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
+  background-color: linear-gradient(0deg, #bc1965, #493062 100%);
+  background-image: linear-gradient(0deg, #bc1965, #493062 100%);
   border-radius: 15px;
   margin-bottom: 65px;
   color: #fff;
@@ -797,7 +785,6 @@ textarea {
   font-size: 23px;
 }
 .code-example .code-example__item {
-  position: relative;
   width: 65%;
   margin: 15px auto;
 }
@@ -805,15 +792,11 @@ textarea {
   color: #fff;
   z-index: 2;
 }
-.code-example .code-example__item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
-  opacity: 0.45;
+.code-example .code-example__item {
+  max-width: 1440px;
+  background-image: linear-gradient(0deg, #bc1965, #493062 100%);
   border-radius: 15px;
-  z-index: 3;
+  margin-bottom: 45px;
   color: #fff;
 }
 
@@ -895,6 +878,52 @@ textarea {
 .page-footer .rsschool:hover path {
   fill: #a42445;
   transition: fill 0.3s ease-in-out;
+}
+
+.theme-toggle {
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+.theme-toggle :hover {
+  opacity: 1;
+}
+
+.light {
+  transition: background 0.6s ease-in-out;
+  background: #fff;
+  color: #4e1e5d;
+}
+.light a {
+  color: #4e1e5d;
+}
+.light .navigation-page {
+  background-color: #fff;
+  transition: background 0.6s ease-in-out;
+}
+.light .navigation-page .site-bar__link {
+  color: #4e1e5d;
+}
+.light .btn a {
+  color: #fff;
+  background-color: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
+}
+.light .btn-dowload {
+  border-color: #a42445;
+}
+.light .btn-dowload a {
+  color: #4e1e5d;
+}
+.light .code-example__item {
+  background-image: #321a97;
+}
+.light .code-example__desc {
+  color: #fff;
+}
+.light .contact-links__item a {
+  color: #4e1e5d;
 }
 
 /*# sourceMappingURL=style.css.map */
