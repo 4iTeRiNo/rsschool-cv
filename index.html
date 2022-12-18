@@ -56,9 +56,9 @@
 						<ul class="site-bar">
 							<li class="site-bar__item"><a href="#skills" class="site-bar__link">Skills</a></li>
 							<li class="site-bar__item"><a href="#projects" class="site-bar__link">Project</a></li>
-							<li class="site-bar__item"><a href="" class="site-bar__link">Experience</a></li>
-							<li class="site-bar__item"><a href="education" class="site-bar__link">Education</a></li>
-							<li class="site-bar__item"><a href="contact" class="site-bar__link">Contact</a></li>
+							<li class="site-bar__item"><a href="#experience" class="site-bar__link">Experience</a></li>
+							<li class="site-bar__item"><a href="#education" class="site-bar__link">Education</a></li>
+							<li class="site-bar__item"><a href="#contact" class="site-bar__link">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -123,28 +123,9 @@
 							</article>
 						</div>
 					</div>
-					<div class="code-example container">
-						<h2 class="title">Code example:</h2>
-						<h3 class="code-example__name"><span>Reverse words</span>
-							Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
-						</h3>
-						<pre class="code-example__item">
-							<code class="code-example__desc">
-								Examples
-
-								"This is an example!" ==> "sihT si na !elpmaxe"
-								"double  spaces"      ==> "elbuod  secaps"
-
-								Solution task
-
-								function reverseWords(str) {
-									let tmp = str.split(' ').map(word => word.split('').reverse().join(''))
-									return tmp.join(' ')
-								}
-							</code>
-						</pre>
-						<h2 class="title">Code example:</h2>
-						<h3 class="code-example__name"><span>Reverse words</span>
+					<div id="experience" class="code-example container">
+						<h2 class="title">Code example</h2>
+						<h3 class="code-example__name"><span>Reverse words:</span>
 							Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 						</h3>
 						<pre class="code-example__item">
@@ -158,7 +139,7 @@
 
 								function getDivisorsCnt(n){
 									let result = [];
-									for (let i = 0; i &lt;&amp; n; i++){
+									for (let i = 0; i &lt= n; i++){
 										if (n % i == 0) result.push(i);
 									}
 									return result.length;
@@ -194,7 +175,7 @@
 					</div>
 				</div>
 			</main>
-			<button class="btn btn-to-top" title="Go to top" type="button" style="display: block">Top</button>
+			<button id="scrollToTop" class="btn btn-to-top" title="Go to top" type="button">Top</button>
 			<footer id="contact" class="page-footer">
 				<div class="page-footer__inner">
 					<div class="page-footer__copyright">
@@ -219,6 +200,6 @@
 			</footer>
 		</div>
 	</body>
-	<script src="js/common.js"></script>
-	<script src="js/toggle.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/toggle.js"></script>
 </html>

@@ -550,7 +550,7 @@ textarea {
 }
 
 .btn-to-top {
-  display: none;
+  display: block;
   position: fixed;
   bottom: 100px;
   right: 30px;
@@ -784,6 +784,37 @@ textarea {
   background-color: #321a97;
   opacity: 0.58;
   z-index: 1;
+}
+
+.code-example {
+  margin-bottom: 100px;
+}
+.code-example .code-example__name {
+  font-size: 22px;
+}
+.code-example .code-example__name span {
+  color: #a42445;
+  font-size: 23px;
+}
+.code-example .code-example__item {
+  position: relative;
+  width: 65%;
+  margin: 15px auto;
+}
+.code-example .code-example__desc {
+  color: #fff;
+  z-index: 2;
+}
+.code-example .code-example__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(188, 25, 101, 0.631372549), #493062 100%);
+  opacity: 0.45;
+  border-radius: 15px;
+  z-index: 3;
+  color: #fff;
 }
 
 .education {
