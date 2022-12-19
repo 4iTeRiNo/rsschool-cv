@@ -50,4 +50,4 @@ scrollToTopButton.addEventListener("click", function(e) {
 
 // burgerButton.addEventListener("click", toggleMobileNav);
 // siteNav.addEventListener("click", closeNav);
-downloadButton.addEventListener("click", animateDownloadButton);
+// downloadButton.addEventListener("click", animateDownloadButton);

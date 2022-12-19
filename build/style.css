@@ -16,10 +16,6 @@ html {
   min-width: 320px;
 }
 
-.hidden {
-  overflow: hidden;
-}
-
 .wrapper {
   display: flex;
   min-height: 100vh;
@@ -30,10 +26,20 @@ html {
   padding: 0 20px;
   max-width: 1440px;
 }
+@media (max-width: 400px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
 
 .main-wrapper {
   margin: 0 auto;
   padding-top: 90px;
+}
+@media (max-width: 400px) {
+  .main-wrapper {
+    max-width: 400px;
+  }
 }
 
 .title {
@@ -551,8 +557,28 @@ textarea {
 }
 
 .container {
-  width: 1238px;
+  max-width: 1238px;
   margin: 0 auto;
+}
+@media (max-width: 1238px) {
+  .container {
+    max-width: 1197px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
 }
 
 .navigation-page {
@@ -565,7 +591,12 @@ textarea {
   background-color: #1C121F;
   z-index: 5;
   transition: background 0.6s ease-in-out;
-  min-width: 1440px;
+}
+@media (max-width: 400px) {
+  .navigation-page {
+    padding: 0 30px;
+    max-width: 400px;
+  }
 }
 .navigation-page .navigation-page__inner {
   display: flex;
@@ -578,6 +609,11 @@ textarea {
 .navigation-page .navigation-page__inner .site-bar {
   display: flex;
   grid-gap: 40px;
+}
+@media (max-width: 400px) {
+  .navigation-page .navigation-page__inner .site-bar {
+    display: none;
+  }
 }
 .navigation-page .navigation-page__inner .site-bar__link {
   display: grid;
@@ -637,6 +673,17 @@ textarea {
   font-weight: bold;
   font-size: 56px;
 }
+@media (max-width: 768px) {
+  .about-me .about-me__education {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  .about-me .about-me__education {
+    font-size: 29px;
+    line-height: 2.2rem;
+  }
+}
 .about-me .about-me__buttons-wrapper {
   display: flex;
   flex-direction: row;
@@ -681,10 +728,28 @@ textarea {
   margin-bottom: 50px;
   display: flex;
 }
+@media (max-width: 400px) {
+  .skills {
+    display: block;
+    text-align: center;
+  }
+}
 .skills .title {
   margin: auto;
   padding-right: 150px;
   padding-left: 30px;
+}
+@media (max-width: 768px) {
+  .skills .title {
+    padding-right: 60px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .skills .title {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }
 .skills .skills__list {
   display: inline-grid;
@@ -693,9 +758,22 @@ textarea {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 400px) {
+  .skills .skills__list {
+    width: inherit;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+}
 .skills .skills__item {
   position: relative;
   width: fit-content;
+}
+@media (max-width: 400px) {
+  .skills .skills__item {
+    width: inherit;
+  }
 }
 
 .skills__item::before,
@@ -746,7 +824,12 @@ textarea {
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
-  margin-bottom: 16px;
+}
+@media (max-width: 400px) {
+  .project .project__link .project__img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .project .project__link .projects__content {
   position: absolute;
@@ -779,24 +862,58 @@ textarea {
 }
 .code-example .code-example__name {
   font-size: 22px;
+  padding-left: 20px;
 }
 .code-example .code-example__name span {
   color: #a42445;
   font-size: 23px;
 }
-.code-example .code-example__item {
+.code-example .code-example__codebox {
+  position: relative;
   width: 65%;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .code-example .code-example__codebox {
+    width: 100%;
+  }
+}
+.code-example .code-example__item {
+  width: 100%;
+  height: 100%;
   margin: 15px auto;
 }
-.code-example .code-example__desc {
+.code-example .code-example__item .language-javascript {
+  position: relative;
+  z-index: 1;
+}
+.code-example .code-example__item .code-example__desc {
+  position: relative;
   color: #fff;
   z-index: 2;
+  right: 100px;
+}
+@media (max-width: 1000px) {
+  .code-example .code-example__item .code-example__desc {
+    right: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .code-example .code-example__item .code-example__desc {
+    right: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .code-example .code-example__item .code-example__desc {
+    right: 310px;
+    font-size: 17px;
+  }
 }
 .code-example .code-example__item {
   max-width: 1440px;
   background-image: linear-gradient(0deg, #bc1965, #493062 100%);
   border-radius: 15px;
-  margin-bottom: 45px;
   color: #fff;
 }
 
@@ -815,15 +932,23 @@ textarea {
   display: flex;
   flex-direction: column;
   row-gap: 68px;
+  padding: 0 10px;
+  max-width: 100%;
 }
 .education .education__list a {
   transition: color 0.3s ease-in-out;
 }
 .education .education__list .education__item {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 2fr;
-  column-gap: 28px;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  column-gap: 35px;
   position: relative;
+}
+@media (max-width: 400px) {
+  .education .education__list .education__item {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
 }
 .education .education__list .education__year {
   font-family: "Montserrat", sans-serif;
@@ -838,11 +963,15 @@ textarea {
   background-color: #e0e0e0;
   bottom: -34px;
 }
+@media (max-width: 768px) {
+  .education__item:not(:last-child)::before {
+    bottom: -22px;
+  }
+}
 
 .page-footer {
-  position: relative;
   width: 90%;
-  min-height: 70px;
+  min-height: 35px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -853,8 +982,20 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 400px) {
+  .page-footer .page-footer__inner {
+    display: block;
+    gap: 35px;
+    text-align: center;
+  }
+}
 .page-footer .page-footer__copyright {
   width: 100%;
+}
+@media (max-width: 400px) {
+  .page-footer .page-footer__copyright {
+    margin-bottom: 10px;
+  }
 }
 .page-footer .page-footer__contact-links {
   display: flex;
@@ -912,12 +1053,11 @@ textarea {
 }
 .light .btn-dowload {
   border-color: #a42445;
-}
-.light .btn-dowload a {
   color: #4e1e5d;
 }
 .light .code-example__item {
   background-image: #321a97;
+  width: 100%;
 }
 .light .code-example__desc {
   color: #fff;
