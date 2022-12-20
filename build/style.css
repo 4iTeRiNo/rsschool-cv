@@ -505,6 +505,18 @@ textarea {
   cursor: pointer;
   position: relative;
 }
+@media (max-width: 400px) {
+  .btn {
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+@media (max-width: 360px) {
+  .btn {
+    padding: 0.4rem 1rem;
+  }
+}
 .btn a {
   color: #e0e0e0;
 }
@@ -696,7 +708,7 @@ textarea {
 }
 @media (max-width: 900px) {
   .about-me .about-me__education {
-    font-size: 47px;
+    font-size: 40px;
     line-height: 1.2;
   }
 }
@@ -711,6 +723,12 @@ textarea {
   flex-direction: row;
   gap: 32px;
   margin-bottom: 16px;
+}
+@media (max-width: 360px) {
+  .about-me .about-me__buttons-wrapper {
+    gap: 10px;
+    font-size: 15px;
+  }
 }
 .about-me .about-me__description {
   max-width: 90%;
@@ -1069,6 +1087,26 @@ textarea {
   }
 }
 
+.language {
+  margin-bottom: 50px;
+}
+.language .language__block {
+  padding-right: 30px;
+}
+.language .language__list {
+  display: grid;
+  padding-left: 30px;
+  grid-template-columns: repeat(2, 3fr);
+  column-gap: 50px;
+  row-gap: 10px;
+}
+.language .language__list .language__item {
+  font-size: 2rem;
+}
+.language .language__list .language__level {
+  font-size: 1.3rem;
+}
+
 .page-footer {
   width: 90%;
   min-height: 35px;
@@ -1082,15 +1120,25 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .page-footer .page-footer__inner {
+    display: block;
+    text-align: center;
+  }
+}
 @media (max-width: 400px) {
   .page-footer .page-footer__inner {
     display: block;
-    gap: 35px;
     text-align: center;
   }
 }
 .page-footer .page-footer__copyright {
   width: 100%;
+}
+@media (max-width: 550px) {
+  .page-footer .page-footer__copyright {
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 400px) {
   .page-footer .page-footer__copyright {
