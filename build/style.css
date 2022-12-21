@@ -948,28 +948,19 @@ textarea {
 }
 .code-example .code-example__codebox {
   position: relative;
-  width: 75%;
+  width: 65%;
   height: 100%;
   margin: 0 auto;
 }
 @media (max-width: 900px) {
   .code-example .code-example__codebox {
-    width: 75%;
+    width: 76%;
+    left: 0;
   }
 }
 @media (max-width: 768px) {
   .code-example .code-example__codebox {
     width: 90%;
-  }
-}
-@media (max-width: 550px) {
-  .code-example .code-example__codebox {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .code-example .code-example__codebox {
-    width: 100%;
   }
 }
 .code-example .code-example__item {
@@ -980,6 +971,7 @@ textarea {
 .code-example .code-example__item .language-javascript {
   position: relative;
   z-index: 1;
+  overflow: auto;
 }
 .code-example .code-example__item .code-example__desc {
   position: relative;
@@ -987,34 +979,19 @@ textarea {
   z-index: 2;
   right: 100px;
 }
-@media (max-width: 1197px) {
-  .code-example .code-example__item .code-example__desc {
-    right: 120px;
-    font-size: 18.5px;
-  }
-}
 @media (max-width: 900px) {
   .code-example .code-example__item .code-example__desc {
     right: 200px;
-    font-size: 17px;
   }
 }
 @media (max-width: 768px) {
   .code-example .code-example__item .code-example__desc {
     right: 250px;
-    font-size: 17px;
   }
 }
 @media (max-width: 550px) {
   .code-example .code-example__item .code-example__desc {
     right: 300px;
-    font-size: 16.6px;
-  }
-}
-@media (max-width: 400px) {
-  .code-example .code-example__item .code-example__desc {
-    right: 350px;
-    font-size: 15px;
   }
 }
 .code-example .code-example__item {
